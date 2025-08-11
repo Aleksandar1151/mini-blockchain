@@ -1,0 +1,460 @@
+{
+	"info": {
+		"_postman_id": "5777f5a7-adde-42e8-9565-f739f0fb8fd4",
+		"name": "Blockchain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20789288"
+	},
+	"item": [
+		{
+			"name": "Is valid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5002/is-valid",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"is-valid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get chain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/get-chain",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"get-chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mine a block",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5002/mine-block",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"mine-block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zelimir Get Chain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/get-chain",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"get-chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bojan Get Chain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5002/get-chain",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"get-chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jovana Get Chain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5003/get-chain",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5003",
+					"path": [
+						"get-chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zelimir Connect Nodes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\":[\"http://127.0.0.1:5002\",\r\n             \"http://127.0.0.1:5003\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5001/connect-node",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"connect-node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bojan Connect Nodes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\":[\"http://127.0.0.1:5001\",\r\n             \"http://127.0.0.1:5003\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/connect-node",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"connect-node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jovana Connect Nodes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\":[\"http://127.0.0.1:5001\",\r\n             \"http://127.0.0.1:5002\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5003/connect-node",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5003",
+					"path": [
+						"connect-node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zelimir Mine Block",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/mine-block",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"mine-block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bojan Mine Block",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5002/mine-block",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"mine-block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jovana Mine Block",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5003/mine-block",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5003",
+					"path": [
+						"mine-block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zelimir Replace Chain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/replace-chain",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"replace-chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bojan Replace Chain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5002/replace-chain",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"replace-chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jovana Replace Chain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5003/replace-chain",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5003",
+					"path": [
+						"replace-chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zelimir Send Coins",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sender\": \"Zelimir\",\r\n    \"receiver\": \"Bojan\",\r\n    \"amount\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5001/add-transaction",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"add-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bojan Send Coins",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sender\": \"Bojan\",\r\n    \"receiver\": \"Jovana\",\r\n    \"amount\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/add-transaction",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"add-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jovana Send Coins",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sender\": \"Jovana\",\r\n    \"receiver\": \"Zelimir\",\r\n    \"amount\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5003/add-transaction",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5003",
+					"path": [
+						"add-transaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
