@@ -1,39 +1,39 @@
-\# MiniBlockchain
+# MiniBlockchain
 
 MiniBlockchain is a simple decentralized blockchain network built in Python using Flask.
 
 The project simulates multiple nodes communicating with each other through a REST API. Each node maintains its own blockchain, can add transactions, mine new blocks, and synchronize with other nodes in the network.
 
 
-\## Technologies
+## Technologies
 
 The application is written in Python and uses several key libraries:
 
-\- Flask for building the API
+- Flask for building the API
 
-\- Requests for HTTP communication between nodes
+- Requests for HTTP communication between nodes
 
-\- Hashlib for SHA256 hashing
+- Hashlib for SHA256 hashing
 
-\- Cryptography (in extended versions) for digital signatures
+- Cryptography (in extended versions) for digital signatures
 
 
 
-\## Project structure
+## Project structure
 
 The project contains scripts for running three independent nodes:
 
-\- corgicoin\_node\_5001.py
+- corgicoin\_node\_5001.py
 
-\- corgicoin\_node\_5002.py
+- corgicoin\_node\_5002.py
 
-\- corgicoin\_node\_5003.py
+- corgicoin\_node\_5003.py
 
 There is also a config.py file with global settings, and optionally a Keys folder used for storing keys if you are running the version with transaction signing.
 
 
 
-\## Installation
+## Installation
 
 First, clone the repository:
 
@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 
 
-\## Configuration
+## Configuration
 
 In config.py you can set the host IP address, the port, and the mining difficulty (the number of leading zeros).
 
@@ -77,7 +77,7 @@ If you are using the version with digital signatures, you need to generate RSA k
 
 
 
-\## Running the nodes
+## Running the nodes
 
 Each node needs to be started in a separate terminal. For example:</br>
 
@@ -113,7 +113,7 @@ python3 corgicoin\_node\_5003.py
 curl -X POST http://127.0.0.1:5001/connect-node
 ```
 
-\## Connecting nodes
+## Connecting nodes
 
 Once the nodes are running, you can connect them by sending a POST request. For example, to connect the node running on port 5001 to the other two:
 
@@ -127,25 +127,18 @@ curl -X POST http://127.0.0.1:5001/connect-node \\
 
 ```
 
-\## API routes
+## API routes
 
 The application provides several main routes:
 
-\- /mine-block – mines a new block and adds it to the chain
+- /mine-block – mines a new block and adds it to the chain
+- /get-chain – returns the full blockchain
+- /is-valid – checks if the blockchain is valid
+- /add-transaction – adds a new transaction
+- /connect-node – connects the current node to other nodes
+- /replace-chain – replaces the chain with the longest one in the network
 
-\- /get-chain – returns the full blockchain
-
-\- /is-valid – checks if the blockchain is valid
-
-\- /add-transaction – adds a new transaction
-
-\- /connect-node – connects the current node to other nodes
-
-\- /replace-chain – replaces the chain with the longest one in the network
-
-
-
-\## Example usage
+## Example usage
 
 If you want to mine a block on the node running on port 5002:
 
@@ -165,7 +158,7 @@ curl http://127.0.0.1:5001/replace-chain
 
 
 
-\## Possible issues
+## Possible issues
 
 If you get an error saying Flask is not found, install it with pip install flask.
 
